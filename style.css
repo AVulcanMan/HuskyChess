@@ -93,7 +93,68 @@ a.active, a:hover {
     cursor: pointer;
     margin-bottom: 20px;
 }
-
+.puzlinks {
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    flex-direction: row;
+    align-content: center;
+    padding:3em;
+    width:100%;
+}
+.ilinks {
+    text-decoration: none;
+    font-size:1.5em;
+}
+#links {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius:8px;
+    padding:0.7em;
+}
+#puzzle {
+    background:black;
+    border-radius:7px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding-left:0.2em;
+}
+#puzzle:hover {
+    transform: scale(1.05);
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #D2B48C 0%, #8B4513 25%, #c28221 51%, #ff357f 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+            animation: AnimateBG 20s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
