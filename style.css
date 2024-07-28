@@ -8,8 +8,13 @@
 
 body {
     font-family: "Sofia Sans Condensed", sans-serif !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+main {
+    flex-grow: 1;
+}
 nav {
     background: #090f13;
     height: 80px;
