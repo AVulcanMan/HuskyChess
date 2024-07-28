@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Sofia Sans Condensed", sans-serif;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
     display: flex;
     align-items: center;
 }
-.logo-container:hover{
+.logo-container:hover {
     transform: scale(1.01);
 }
 
@@ -38,36 +38,43 @@ label.logo {
     color: white;
     font-size: 35px;
     font-weight: bold;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
-nav ul {
+.navitems {
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
 
-nav ul li {
+.item {
     display: inline-block;
     margin: 0 5px;
 }
 
-nav ul li a {
+.navlinks {
     color: white;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
+    text-decoration: none; /* Ensure no underline */
 }
 
 a.active, a:hover {
-    color:#1b9bff;
+    color: #1b9bff;
     transition: .5s;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
+    text-decoration: none; /* Ensure no underline */
 }
 
 .checkbtn {
     font-size: 30px;
     color: white;
     display: none;
+    cursor: pointer;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
 #check {
@@ -77,9 +84,12 @@ a.active, a:hover {
 @media (max-width: 952px) {
     label.logo {
         font-size: 30px;
+        font-family: "Sofia Sans Condensed", sans-serif !important;
     }
     nav ul li a {
         font-size: 16px;
+        font-family: "Sofia Sans Condensed", sans-serif !important;
+        text-decoration: none; /* Ensure no underline */
     }
 }
 
@@ -87,32 +97,29 @@ a.active, a:hover {
     .checkbtn {
         display: block;
     }
-    ul {
+    .navitems {
         position: fixed;
+        top:0;
+        left: -100%;
         width: 100%;
         height: 100vh;
         background: #2c3e50;
-        top: 80px;
-        left: -100%;
+        flex-direction: column;
+        align-items: center;         /* Added line */
+        justify-content: center;     /* Added line */
+        align-items: center;
+        justify-content: center;
         text-align: center;
         transition: all .5s;
     }
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
+    .navitems .item {
+        margin: 20px 0;
     }
-    nav ul li a {
-        font-size: 20px;
-    }
-    a:hover, a.active {
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul {
+    #check:checked ~ .navitems {
         left: 0;
     }
 }
+
 .footer {
     background-color: #333;
     color: #fff;
@@ -121,20 +128,24 @@ a.active, a:hover {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
 .footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
 .footer a:hover {
     text-decoration: underline;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
 .footer .social-icons {
     margin-top: 10px;
+    font-family: "Sofia Sans Condensed", sans-serif !important;
 }
 
 .footer .social-icons img {
@@ -146,6 +157,7 @@ a.active, a:hover {
 @media (max-width: 600px) {
     .footer {
         text-align: center;
+        font-family: "Sofia Sans Condensed", sans-serif !important;
     }
 
     .footer .social-icons img {
