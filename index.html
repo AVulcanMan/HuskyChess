@@ -15,7 +15,7 @@
     <main>
       <nav>
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn" onclick="toggleMenu()">
+        <label for="check" class="checkbtn" id="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <div class="logo-container">
@@ -24,7 +24,7 @@
         </div>
         <ul class="navitems" style = "padding-top:1.5%">
             <li class="closebtn">
-                <label for="check" class="closebtn-label"><i class="fas fa-times"></i></label>
+                <label for="check" class="closebtn-label" id="closebtn"><i class="fas fa-times"></i></label>
             </li>
             <li class="item"><a href="#" class="navlinks">Home</a></li>
             <li class="item"><a href="#" class="navlinks">About</a></li>
@@ -38,7 +38,7 @@
             <h1 style ="font-family: Sofia Sans Condensed, sans-serif;">  Past & Upcoming Events</h1>
             <p>Find out about club plans in the future, as well as what we've already done</p>
          </div>
-         <div class="slider">
+         <div class="slider" id="slider">
             <div class="slide">
                 <img src="event1.jpg" alt="First meeting">
                 <div class="info">

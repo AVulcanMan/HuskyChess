@@ -281,10 +281,6 @@ a.active, a:hover {
     .closebtn-label {
         display: block;
     }
-    #body.menu-active .slider {
-        display: none;
-    }
-
 }
 
 .footer {

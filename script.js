@@ -20,7 +20,10 @@ function nextSlide() {
 // Initial display
 showSlide(currentSlide);
 
-function toggleMenu() {
-    const body = document.getElementById('body');
-    body.classList.toggle('menu-active');
-}
+document.getElementById("checkbtn").onclick = function() {
+    document.getElementById("slider").style.display = "none";
+};
+
+document.getElementById("closebtn").onclick = function() {
+    document.getElementById("slider").style.display = "block";
+};
