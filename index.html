@@ -15,7 +15,7 @@
     <main>
       <nav>
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
+        <label for="check" class="checkbtn" onclick="toggleMenu()">
             <i class="fas fa-bars"></i>
         </label>
         <div class="logo-container">
@@ -38,8 +38,32 @@
             <h1 style ="font-family: Sofia Sans Condensed, sans-serif;">  Past & Upcoming Events</h1>
             <p>Find out about club plans in the future, as well as what we've already done</p>
          </div>
-         
+         <div class="slider">
+            <div class="slide">
+                <img src="event1.jpg" alt="First meeting">
+                <div class="info">
+                    <h1>First Meeting</h1>
+                    <p>Details TBD</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="bughouse.png" alt="Bughouse Image">
+                <div class="info">
+                    <h1>Bughouse Tournament</h1>
+                    <p>Details TBD</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="volunteer.png" alt="Volunteer Image">
+                <div class="info">
+                    <h1>Volunteering</h1>
+                    <p>Details TBD</p>
+                </div>
+            </div>
+            <div class="arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+            <div class="arrow right-arrow" onclick="nextSlide()">&#10095;</div>
         </div>
+        
 
      </div>
 
